@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="./Gemini_Generated_Image_assb6passb6passb-removebg-preview.png">
+  <title>Safe Stepper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Ankle Band</h1>
+
+    <div id="status" class="status disconnected">Not Connected</div>
+
+    <div class="data-box">
+      <span>Distance</span>
+      <span id="distance">-- cm</span>
+    </div>
+
+    <div class="data-box">
+      <span>Battery</span>
+      <span id="battery">-- %</span>
+    </div>
+
+    <div class="data-box">
+      <span>IR Status</span>
+      <span id="ir">--</span>
+    </div>
+
+    <div class="data-box">
+      <span>Flame</span>
+      <span id="flame">--</span>
+    </div>
+
+    <div class="buttons">
+      <button class="btn-connect" onclick="connectBLE()">Connect</button>
+      <button class="btn-disconnect" onclick="disconnectBLE()">Disconnect</button>
+      <button class="btn-stop" onclick="sendCommand('STOP')">Stop Vibration</button>
+      <button class="btn-listen" onclick="startListening()">start Listening</button>
+    </div>
+
+    <div class="footer-note">
+      Made By Team CR
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

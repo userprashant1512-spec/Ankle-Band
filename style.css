@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI, Arial;
+}
+
+body {
+  background: #f4f7fb;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: #fff;
+  width: 95%;
+  max-width: 420px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.status {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.connected { color: green; }
+.disconnected { color: red; }
+
+.data-box {
+  display: flex;
+  justify-content: space-between;
+  background: #f1f5f9;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+button {
+  padding: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-connect { background: #2563eb; color: #fff; }
+.btn-disconnect { background: #f59e0b; color: #fff; }
+.btn-stop { background: #dc2626; color: #fff; }
+.btn-listen { background: #10b981; color: #fff; }
+
+.footer-note {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #6b7280;
+}
